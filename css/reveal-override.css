@@ -1,0 +1,12 @@
+body {
+    background-image: url(../images/LO_BetacloudSolutions_RZ_RGB.svg);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 1% 98%;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal h1 { font-size: 2em; }
