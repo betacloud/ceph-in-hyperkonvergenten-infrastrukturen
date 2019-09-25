@@ -4,5 +4,11 @@
 <!-- .slide: data-background-image="images/by-nc-sa.svg" data-background-size="contain" -->
 
 
-## URL für Slides <!-- .element: class="hidden" -->
+## URL für Slides
 <https://betacloud.github.io/ceph-in-hyperkonvergenten-infrastrukturen/>
+
+
+## Kontaktdaten
+
+* info@betaloud-solutions.de
+* https://betacloud-solutions.de

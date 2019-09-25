@@ -9,6 +9,9 @@ Das ergibt sich am besten bei einem Blick auf die Funktionsweise von Ceph. Bei O
 analog, nur dass hier virtuelle Systeme auf Compute Nodes verteilt werden und keine Objekte.
 
 
+# Am Beispiel von Ceph
+
+
 <!-- .slide: data-background-image="images/ceph-placement-001.png" data-background-size="contain" -->
 
 

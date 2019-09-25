@@ -5,56 +5,27 @@
 Die Graphik stammt von Ralph Ruthe (https://ruthe.de/), einem begnadetem Witzbildmaler.
 
 
-<!-- .slide: data-background-image="images/merge-overview-001.png" data-background-size="contain" -->
-
-
-<!-- .slide: data-background-image="images/merge-overview-002.png" data-background-size="contain" -->
-
-
-<!-- .slide: data-background-image="images/merge-overview-003.png" data-background-size="contain" -->
-
-
-<!-- .slide: data-background-image="images/merge-overview-004.png" data-background-size="contain" -->
-
-
-<!-- .slide: data-background-image="images/merge-overview-005.png" data-background-size="contain" -->
-
-
-<!-- .slide: data-background-image="images/merge-overview-006.png" data-background-size="contain" -->
-
-
 <!-- .slide: data-background-image="images/merge-001.png" data-background-size="contain" -->
-<!-- Note -->
-Im ersten Schritt werden die Controlplane und die Dataplane der einzelnen Teilsysteme zusammengefasst.
-
-Besteht die Controlplane aus 3 Systemen und die Dataplane aus 10 Systemen besteht werden 3 Systeme
-aus der Dataplane mit als Controller verwendet. Diese 3 Systeme werden ggf. mit etwas mehr Cores + Memory
-bestückt.
 
 
 <!-- .slide: data-background-image="images/merge-002.png" data-background-size="contain" -->
+<!-- Note -->
 
 
 <!-- .slide: data-background-image="images/merge-003.png" data-background-size="contain" -->
 <!-- Note -->
-Im Fall von OpenStack wird neben der Controlplane auch die Networkingplane mit auf der Dataplane platziert.
-
-Am Ende hat man also für beide Teilsysteme eine Dataplane auf der auch die Controlplane betrieben werden.
 
 
 <!-- .slide: data-background-image="images/merge-004.png" data-background-size="contain" -->
+<!-- Note -->
 
 
 <!-- .slide: data-background-image="images/merge-005.png" data-background-size="contain" -->
+<!-- Note -->
 
 
 <!-- .slide: data-background-image="images/merge-006.png" data-background-size="contain" -->
 <!-- Note -->
-Im zweiten Schritt werden die Dataplanes der Teilsysteme, welche nach Durchführung des ersten Schritts auch die Controlplanes enthalten,
-zusammengefasst.
-
-Ein Compute Node von OpenStack wird dafür um die Platten aus den Storage Nodes von Ceph entsprechend erweitert. Weiterhin werden
-Cores + Memory entsprechend erweitert.
 
 
 <!-- .slide: data-background-image="images/merge-007.png" data-background-size="contain" -->
@@ -62,35 +33,35 @@ Cores + Memory entsprechend erweitert.
 
 <!-- .slide: data-background-image="images/merge-008.png" data-background-size="contain" -->
 
-
+## Detailansichten Nodes <!-- .element: class="hidden" -->
 <!-- .slide: data-background-image="images/merged-node-001.png" data-background-size="contain" -->
 
 
 <!-- .slide: data-background-image="images/merged-node-002.png" data-background-size="contain" -->
 
 
-## Zurück zum Beispiel
+## Zurück zum Beispiel <!-- .element: class="hidden" -->
+<!-- .slide: data-background-image="images/merge-001.png" data-background-size="contain" -->
+<!-- Note -->
+* 3 Systeme für Controller von OpenStack
+* 3 Systeme für Netzwerk von OpenStack
+* 10 Systeme für Ressourcen von OpenStack
+* 3 Systeme für Controller von Ceph
+* 10 Systeme für Ressourcen von Ceph
 
-* 3 Systeme für Controller von OpenStack <!-- .element: class="fragment" -->
-* 3 Systeme für Netzwerk von OpenStack <!-- .element: class="fragment" -->
-* 10 Systeme für Ressourcen von OpenStack <!-- .element: class="fragment" -->
-* 3 Systeme für Controller von Ceph <!-- .element: class="fragment" -->
-* 10 Systeme für Ressourcen von Ceph <!-- .element: class="fragment" -->
 
-
-* Zusammenfassung auf 10 Bare-metal Systeme
-* Memory wird je System um 64 GByte erweitert <!-- .element: class="fragment" -->
-* 10 oder 12 Cores statt 8 Cores je Socket <!-- .element: class="fragment" -->
-
+<!-- .slide: data-background-image="images/merge-006.png" data-background-size="contain" -->
 <!-- Note -->
 Jeder Compute Node erhält etwas mehr Arbeitsspeicher und ein paar mehr Cores. Zusätzlich noch
 die HDDs, welche ansonsten in den Storage Nodes von Ceph verbaut worden wären.
 
+* Memory wird je System um 64 GByte erweitert
+* 10 oder 12 Cores statt 8 Cores je Socket
+
 
 ## Einsparungen
 
-
-* 19 Bare-metal Systeme weniger und 19 unbelegte Höheneinheiten
+* 19 Bare-metal Systeme weniger und 19 unbelegte Höheneinheiten <!-- .element: class="fragment" -->
 * 38 freie PDUs und 38 eingesparte C13 Kabel <!-- .element: class="fragment" -->
 * 57 freie 1 GBit Ports und 57 eingesparte CAT 6 Kabel <!-- .element: class="fragment" -->
 * 19 freie 10/25/40 GBit Ports und 38 eingesparte Transceiver und 19 LWL Kabel <!-- .element: class="fragment" -->

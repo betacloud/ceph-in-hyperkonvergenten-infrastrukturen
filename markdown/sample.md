@@ -1,39 +1,59 @@
 # Beispiel
 
 
-## Anforderung <!-- .element: class="hidden" -->
+## Ressourcen
 
-* Bereitgestellte Ressourcen
-  * 2 TByte Memory
-  * 100 TByte Storage
-  * 500 vCPUs
+* 2 TByte Memory <!-- .element: class="fragment" -->
+* 100 TByte Storage <!-- .element: class="fragment" -->
+* 500 vCPUs <!-- .element: class="fragment" -->
+<!-- Note -->
+Skizze von einer üblichen Kundenanforderung für die Bereitstellung von einer kleinen Infrastructure as a Service Umgebung.
+
+
+## Redundanz
+
+* Redundante Ressourcen <!-- .element: class="fragment" -->
 * Redundante Controller <!-- .element: class="fragment" -->
 * Redundantes Netzwerk <!-- .element: class="fragment" -->
-* Redundante Ressourcen <!-- .element: class="fragment" -->
-
-<!-- Note -->
-Skizze von einer üblichen Kundenanforderung für die Bereitstellung von einer Infrastructure as a Service Umgebung
 
 
 ## Umsetzung <!-- .element: class="hidden" -->
 
-* 3 Systeme für Controller von OpenStack
-* 3 Systeme für Netzwerk von OpenStack <!-- .element: class="fragment" -->
-* 3 Systeme für Controller von Ceph <!-- .element: class="fragment" -->
+<!-- .slide: data-background-image="images/merge-overview-001.png" data-background-size="contain" -->
 
+
+<!-- .slide: data-background-image="images/merge-overview-002.png" data-background-size="contain" -->
 <!-- Note -->
-Skizze von einer vollausgebauten Umgebung mit unabhänagigen Teilsystemen zur vorherigen Kundenanforderung
-
-
 * 10 Systeme für Ressourcen von OpenStack
   * 256 GByte Memory + 2 Sockets mit je 8 Cores
   * insgesamt 2560 GByte Memory und 160 Cores (ohne Hyperthreading)
-* 10 Systeme für Ressourcen von Ceph <!-- .element: class="fragment" -->
+
+
+<!-- .slide: data-background-image="images/merge-overview-003.png" data-background-size="contain" -->
+<!-- Note -->
+* 3 Systeme für Netzwerk von OpenStack
+
+
+<!-- .slide: data-background-image="images/merge-overview-004.png" data-background-size="contain" -->
+<!-- Note -->
+* 3 Systeme für Controller von OpenStack
+
+
+<!-- .slide: data-background-image="images/merge-overview-005.png" data-background-size="contain" -->
+<!-- Note -->
+* 10 Systeme für Ressourcen von Ceph
   * 8 HDDs mit je 4 TByte
   * insgesamt 320 TByte Storage (ohne Beachtung der Redundanz)
 
 
-* 29 Bare-metal Systeme
+<!-- .slide: data-background-image="images/merge-overview-006.png" data-background-size="contain" -->
+<!-- Note -->
+* 3 Systeme für Controller von Ceph <!-- .element: class="fragment" -->
+
+
+## Material- und Platzbedarf
+
+* 29 Bare-metal Systeme <!-- .element: class="fragment" -->
   * 29 belegte Höheneinheiten
 * 58 belegte PDUs <!-- .element: class="fragment" -->
   * 58 C13 Kabel
