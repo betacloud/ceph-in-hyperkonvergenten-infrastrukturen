@@ -33,6 +33,7 @@ Die Graphik stammt von Ralph Ruthe (https://ruthe.de/), einem begnadetem Witzbil
 
 <!-- .slide: data-background-image="images/merge-008.png" data-background-size="contain" -->
 
+
 ## Detailansichten Nodes <!-- .element: class="hidden" -->
 <!-- .slide: data-background-image="images/merged-node-001.png" data-background-size="contain" -->
 

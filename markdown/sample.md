@@ -47,8 +47,6 @@ Skizze von einer üblichen Kundenanforderung für die Bereitstellung von einer k
 
 
 <!-- .slide: data-background-image="images/merge-overview-006.png" data-background-size="contain" -->
-<!-- Note -->
-* 3 Systeme für Controller von Ceph <!-- .element: class="fragment" -->
 
 
 ## Material- und Platzbedarf

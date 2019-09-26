@@ -32,7 +32,8 @@ analog, nur dass hier virtuelle Systeme auf Compute Nodes verteilt werden und ke
 * einer PG wird aus einer Failure Domain immer nur eine OSD zugeordnet
 
 
-## Failure Domains
+## Failure Domains <!-- .element: class="hidden" -->
+<!-- .slide: data-background-image="images/ceph-placement-005.png" data-background-size="contain" -->
 <!-- Note -->
 Die Fehlertoleranz einer Umgebung wird durch die Berücksichtigung einzelner Failure Domains erreicht.
 
